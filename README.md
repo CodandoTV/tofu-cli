@@ -12,3 +12,7 @@ You need to copy `tofu.py` to your project, you also can customize the script, t
 pip install -r requirements.txt
 ```
 
+## How to use?
+
+<img src="img/tofu-real-use.webm" />
+
