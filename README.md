@@ -6,13 +6,23 @@ Tofu is a powerful and intuitive Command-Line Interface (CLI) tool designed to s
 
 ## Installation
 
-You need to copy `tofu.py` to your project, you also can customize the script, the idea is to adapt this script according your needed.
+1. Clone the repository in the root level of your project
+
+2. Add the folder `tofu-cli` to your `.gitignore` file
+
+3. Open the `tofu-cli` folder
+
+4. Install the dependencies:
 
 ```
 pip install -r requirements.txt
 ```
 
 ## How to use?
+
+```python3 tofu.py```
+
+- Video showing how to use:
 
 <img src="img/tofu-real-use.gif" />
 
