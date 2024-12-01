@@ -41,7 +41,7 @@ def convert_module_name_to_module_path(module_name, folder_path):
 
 
 def main():
-    folder_path = os.getcwd()
+    folder_path = os.getcwd().replace("tofu-cli", "src")
     directories_modules = find_folders_with_build_gradle_script(root_path=folder_path)
 
     search_suggestions = []
@@ -71,7 +71,7 @@ def main():
 
     # Update settings.gradle.kts adding the new module
     with open(folder_path + "/" + "settings.gradle.kts", "a") as file:
-        file.write("include(\"" + new_module_name + "\")")
+        file.write("\ninclude(\"" + new_module_name + "\")")
 
     # Display the chosen input
     print("Now you just need to sync your project...")
